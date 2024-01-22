@@ -18,13 +18,25 @@ const config: Config = {
           200: '#6894DE',
           300: '#477CD7',
           400: '#2C66C9',
-          500: '#2352A1',
+          DEFAULT: '#2352A1',
           600: '#1D4486',
           700: '#163364',
           800: '#0F2243',
         },
         secondary: {
-          DEFAULT: '#47A7DC'
+          200: '#BADFF2',
+          300: '#98CEEB',
+          400: '#76BEE5',
+          DEFAULT: '#47A7DC',
+          600: '#319ED8',
+          700: '#2487BC',
+          800: '#1D6F9A',
+        },
+        third: {
+          DEFAULT: '#FFFFFF'
+        },
+        bgc: {
+          '2': '#F2F6FA'
         }
       },
       height: {
