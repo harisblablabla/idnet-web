@@ -33,7 +33,7 @@ const config: Config = {
           800: '#1D6F9A',
         },
         third: {
-          DEFAULT: '#FFFFFF'
+          DEFAULT: '#D1345B'
         },
         bgc: {
           '2': '#F2F6FA'

@@ -24,6 +24,16 @@ body {
   background-color: #163364;
 }
 
+.btn-outline.btn-secondary {
+  color: #2352A1;
+}
+
+.btn-outline.btn-secondary:hover {
+  background-color: #163364;
+  color: white;
+  border: none;
+}
+
 .btn-circle {
   height: 5rem;
   width: 5rem;
