@@ -7,17 +7,29 @@ export default function Home() {
   return (
     <main className="min-h-screen flex-col justify-center">
       <Navbar />
-      <div className="container mx-auto mb-20">
-        <section id='carousel' className="carousel w-full py-5 z-0">
+
+      {/* mobile */}
+      <div id='mobile' className="relative flex justify-center md:hidden">
+        <Image src="/assets/home_cover.jpg" alt={'home cover'} width={1000} height={750} className='w-full ms-auto h-screen object-cover' />
+        <div className="absolute mx-auto top-1/4 bg-white p-10 w-4/5 rounded-2xl">
+          <h4 className='font-semibold text-3xl mb-5 text-gray-900'>Amplifying your ideas, one connection at a time.</h4>
+          <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia's digital transformation through neutral ICT infrastructure and innovative solutions.</p>
+          <button className="btn btn-primary w-full">Subscribe Now</button>
+        </div>
+      </div>
+
+      {/* large screen */}
+      <div className="sm:container sm:mb-20 sm:mx-auto">
+        <section id='carousel' className="carousel w-full py-5 z-0 hidden md:flex">
           <div id="slide1" className="carousel-item relative w-full">
             <Image src="/assets/home_cover.jpg" alt={'home cover'} width={1000} height={750} className='w-10/12 rounded-2xl ms-auto h-80v object-cover' />
-            <div className="absolute flex right-6 top-1/2">
+            <div className="absolute flex right-6 top-[45%]">
               <a href="#slide2" className=" btn btn-circle bg-white border-none text-3xl text-primary">❯</a>
             </div>
           </div>
           <div id="slide2" className="carousel-item relative w-full">
             <Image src="/assets/home_cover2.jpg" alt={'home cover 2'} width={1000} height={750} className='w-10/12 rounded-2xl ms-auto h-80v object-cover' />
-            <div className="absolute flex right-6 top-1/2">
+            <div className="absolute flex right-6 top-[45%]">
               <a href="#slide1" className=" btn btn-circle bg-white border-none text-3xl text-primary">❯</a>
             </div>
           </div>
@@ -146,39 +158,39 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center mb-10">
           <h2 className='text-neutral-700 font-semibold text-center text-2xl w-4/5 lg:w-1/2 mb-10'>A diverse range of partners, From individual to industry giants, we empower companies across every field.</h2>
           <div className="container">
-          <div className="carousel carousel-end rounded-box">
-            <div className="carousel-item">
-              <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Pizza" />
+            <div className="carousel carousel-end rounded-box">
+              <div className="carousel-item">
+                <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Pizza" />
+              </div>
+              <div className="carousel-item">
+                <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Pizza" />
+              </div>
+              <div className="carousel-item">
+                <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Pizza" />
+              </div>
+              <div className="carousel-item">
+                <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Pizza" />
+              </div>
+              <div className="carousel-item">
+                <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Pizza" />
+              </div>
+              <div className="carousel-item">
+                <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Pizza" />
+              </div>
+              <div className="carousel-item">
+                <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Pizza" />
+              </div>
             </div>
-            <div className="carousel-item">
-              <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" alt="Pizza" />
-            </div>
-            <div className="carousel-item">
-              <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" alt="Pizza" />
-            </div>
-            <div className="carousel-item">
-              <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" alt="Pizza" />
-            </div>
-            <div className="carousel-item">
-              <img src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg" alt="Pizza" />
-            </div>
-            <div className="carousel-item">
-              <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" alt="Pizza" />
-            </div>
-            <div className="carousel-item">
-              <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" alt="Pizza" />
-            </div>
-          </div>
           </div>
         </div>
       </section>
 
       <section>
-      <div className="flex flex-col justify-center items-center mb-10">
-      <h2 className='bg-gradient-to-r from-secondary to-third bg-clip-text text-transparent font-semibold text-4xl text-center w-4/5 mb-10'>Ready to experience the future of connection? Join Ideanet, your digital partner in success.</h2>
-      <a className="btn btn-primary btn-wide ">Subscribe Now</a>
+        <div className="flex flex-col justify-center items-center mb-10">
+          <h2 className='bg-gradient-to-r from-secondary to-third bg-clip-text text-transparent font-semibold text-3xl sm:text-4xl text-center w-4/5 mb-10'>Ready to experience the future of connection? Join Ideanet, your digital partner in success.</h2>
+          <button className="btn btn-primary btn-wide ">Subscribe Now</button>
 
-      </div>
+        </div>
       </section>
 
       <Footer />
