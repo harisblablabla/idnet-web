@@ -13,7 +13,7 @@ export default function Home() {
         <Image src="/assets/home_cover.jpg" alt={'home cover'} width={1000} height={750} className='w-full ms-auto h-screen object-cover' />
         <div className="absolute mx-auto top-1/4 bg-white p-10 w-4/5 rounded-2xl">
           <h4 className='font-semibold text-3xl mb-5 text-gray-900'>Amplifying your ideas, one connection at a time.</h4>
-          <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia's digital transformation through neutral ICT infrastructure and innovative solutions.</p>
+          <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia&apos;s digital transformation through neutral ICT infrastructure and innovative solutions.</p>
           <button className="btn btn-primary w-full">Subscribe Now</button>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function Home() {
           </div>
           <div className="absolute top-1/3 bg-white p-10 rounded-2xl w-2/5">
             <h4 className='font-semibold text-4xl mb-5 text-gray-900'>Amplifying your ideas, one connection at a time.</h4>
-            <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia's digital transformation through neutral ICT infrastructure and innovative solutions.</p>
+            <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia&apos;s digital transformation through neutral ICT infrastructure and innovative solutions.</p>
             <a className="btn btn-primary btn-wide ">Subscribe Now</a>
           </div>
         </section>
@@ -44,7 +44,7 @@ export default function Home() {
       {/* why us */}
       <section id='whyus' className='bg-bgc-2'>
         <div className="flex flex-col justify-center items-center">
-          <h2 className='text-neutral-700 font-semibold text-center text-2xl w-4/5 lg:w-1/2 pt-10 mb-10'>Choose the right digital tools to thrive, whether you're a personal or a tech-powered enterprise.</h2>
+          <h2 className='text-neutral-700 font-semibold text-center text-2xl w-4/5 lg:w-1/2 pt-10 mb-10'>Choose the right digital tools to thrive, whether you&apos;re a personal or a tech-powered enterprise.</h2>
           <div className="sm:flex sm:flex-wrap justify-center container sm:mb-0">
             <div className="bg-white rounded-2xl mx-auto text-center py-10 px-8 w-4/5 sm:w-2/5 mb-10">
               <h2 className='text-primary-700 text-xl font-semibold mb-5'>Solution for retail</h2>
@@ -55,13 +55,13 @@ export default function Home() {
             <div className="bg-white rounded-2xl mx-auto text-center py-10 px-8 w-4/5 sm:w-2/5 mb-10">
               <h2 className='text-primary-700 text-xl font-semibold mb-5'>Solution for enterprise</h2>
               <Image src={'/assets/solution_enterprise.jpeg'} alt={'solution for enterprise'} width={500} height={500} className='object-cover w-1/2  mx-auto mb-5' />
-              <p className='mb-8 text-neutral-700'> In today's fast-paced world, your IT infrastructure needs to be agile and secure. Ideanet enterprise solutions provide the foundation for success.</p>
+              <p className='mb-8 text-neutral-700'> In today&apos;s fast-paced world, your IT infrastructure needs to be agile and secure. Ideanet enterprise solutions provide the foundation for success.</p>
               <a href='#' className='text-primary font-bold'>More info ❯</a>
             </div>
           </div>
 
           <h1 className='font-semibold text-4xl mb-5 text-center text-neutral-700'>Connect to what ignites you.</h1>
-          <h2 className='text-neutral-700 font-medium text-center text-xl w-4/5 lg:w-1/2 mb-20'> Ideanet isn't just internet, it's a commitment to enriching your digital life. Choose Ideanet and experience the difference.</h2>
+          <h2 className='text-neutral-700 font-medium text-center text-xl w-4/5 lg:w-1/2 mb-20'> Ideanet isn&apos;t just internet, it&apos;s a commitment to enriching your digital life. Choose Ideanet and experience the difference.</h2>
 
           <div className="sm:flex sm:flex-wrap justify-center container sm:mb-0 gap-6">
             <div className="relative bg-white rounded-2xl mx-auto text-center pb-10 pt-16 px-8 w-4/5 sm:w-64 md:w-72 mb-20">
@@ -101,7 +101,7 @@ export default function Home() {
                 <Image src={'/assets/solution_retail.jpeg'} alt={'solution for retail'} width={100} height={100} className=' -top-1/2 left-1/2  object-cover mx-auto  mb-5 rounded-2xl' />
               </div>
               <h6 className='text-gray-900 font-bold text-sm mb-2.5'>Never unplug</h6>
-              <p className=' text-neutral-700 text-sm'> 24/7 customer support ensures you're always connected and never left in the dark.</p>
+              <p className=' text-neutral-700 text-sm'> 24/7 customer support ensures you&apos;re always connected and never left in the dark.</p>
             </div>
 
             <div className="relative bg-white rounded-2xl mx-auto text-center pb-10 pt-16 px-8 w-4/5 sm:w-64 md:w-72 mb-20">
@@ -160,6 +160,7 @@ export default function Home() {
           <div className="container">
             <div className="carousel carousel-end rounded-box">
               <div className="carousel-item">
+              {/* <Image src="/assets/home_cover.jpg" alt={'home cover'} width={500} height={250} className='object-cover' /> */}
                 <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Pizza" />
               </div>
               <div className="carousel-item">
