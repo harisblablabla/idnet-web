@@ -1,6 +1,6 @@
 
-import Image from 'next/image'
 import React from 'react'
+import Logo from './Logo'
 
 const Navbar = () => {
     return (
@@ -36,12 +36,12 @@ const Navbar = () => {
                 </div>
             </div>
             <div className="navbar-end lg:hidden">
-                <Image src="/assets/ideanet_logo.png" alt={'logo ideanet'} width={100} height={70} />
+                <Logo width={100} height={70} />
             </div>
 
             {/* web */}
             <div className="navbar-start hidden lg:flex pl-10">
-                <Image src="/assets/ideanet_logo.png" alt={'logo ideanet'} width={150} height={100} />
+                <Logo width={150} height={100} />
                 <ul className="menu menu-horizontal px-1 text-slate-600 font-medium">
                     <li>
                         <details>
@@ -66,19 +66,19 @@ const Navbar = () => {
             </div>
 
             <div className="navbar-end hidden lg:flex pr-16">
-                    <ul className="menu menu-horizontal px-1 text-slate-600 font-medium px-3">
-                        <li>
-                            <details>
-                                <summary>EN</summary>
-                                <ul className="p-2">
-                                    <li><a>EN</a></li>
-                                    <li><a>ID</a></li>
-                                </ul>
-                            </details>
-                        </li>
-                    </ul>
-                    <a className="btn btn-primary">Subscribe Now</a>
-                </div>
+                <ul className="menu menu-horizontal text-slate-600 font-medium px-3">
+                    <li>
+                        <details>
+                            <summary>EN</summary>
+                            <ul className="p-2">
+                                <li><a>EN</a></li>
+                                <li><a>ID</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                </ul>
+                <a className="btn btn-primary">Subscribe Now</a>
+            </div>
         </div>
     )
 }
