@@ -9,10 +9,11 @@ const page = () => {
             <Navbar />
             <div className="sm:container sm:mx-auto">
                 <div className="flex flex-col py-10">
-                    <h1 className='font-semibold text-6xl mb-5 text-center text-neutral-700'>About Us</h1>
+                    <h1 className='font-semibold text-6xl mb-5 text-center mx-auto w-4/5 sm:w-full text-neutral-700'>About Us</h1>
                     <p className='mb-5 text-neutral-700 text-center mx-auto w-4/5 sm:w-3/5'>Ideanet specializes in infrastructure development and ICT services, providing the backbone for the digital world. We follow the &quot;Neutral ICT Infrastructure&quot; concept, ensuring fair and open access to essential tech services for everyone.</p>
-                    <div className="flex flex-row mx-auto gap-7 relative">
-                        <Image src="/assets/about_cover.png" alt={'home cover'} width={600} height={400} className='object-contain' />
+                    <Image src="/assets/about_cover2.png" alt={'home cover 2'} width={400} height={600} className='object-cover sm:hidden mx-auto w-4/5' />
+                    <div className="hidden sm:flex sm:flex-row mx-auto gap-7">
+                        <Image src="/assets/about_cover.png" alt={'home cover'} width={600} height={400} className='object-scale-down' />
                         <Image src="/assets/about_cover2.png" alt={'home cover 2'} width={400} height={600} className='object-cover' />
                     </div>
 
