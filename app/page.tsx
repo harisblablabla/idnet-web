@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -14,7 +15,7 @@ export default function Home() {
         <div className="absolute mx-auto top-1/4 bg-white p-10 w-4/5 rounded-2xl">
           <h4 className='font-semibold text-3xl mb-5 text-gray-900'>Amplifying your ideas, one connection at a time.</h4>
           <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia&apos;s digital transformation through neutral ICT infrastructure and innovative solutions.</p>
-          <button className="btn btn-primary w-full">Subscribe Now</button>
+          <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary w-full">Subscribe Now</Link>
         </div>
       </div>
 
@@ -36,7 +37,7 @@ export default function Home() {
           <div className="absolute top-1/3 bg-white p-10 rounded-2xl w-2/5">
             <h4 className='font-semibold text-4xl mb-5 text-gray-900'>Amplifying your ideas, one connection at a time.</h4>
             <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia&apos;s digital transformation through neutral ICT infrastructure and innovative solutions.</p>
-            <a className="btn btn-primary btn-wide ">Subscribe Now</a>
+            <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary btn-wide ">Subscribe Now</Link>
           </div>
         </section>
       </div>
@@ -189,7 +190,7 @@ export default function Home() {
       <section>
         <div className="flex flex-col justify-center items-center mb-10">
           <h2 className='bg-gradient-to-r from-secondary to-third bg-clip-text text-transparent font-semibold text-3xl sm:text-4xl text-center w-4/5 mb-10'>Ready to experience the future of connection? Join Ideanet, your digital partner in success.</h2>
-          <button className="btn btn-primary btn-wide ">Subscribe Now</button>
+          <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary btn-wide ">Subscribe Now</Link>
 
         </div>
       </section>
