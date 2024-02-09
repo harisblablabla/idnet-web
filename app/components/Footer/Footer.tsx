@@ -4,15 +4,15 @@ import React from 'react'
 function Footer() {
     return (
         <section id='footer' className='bg-gradient-to-r from-secondary to-primary flex flex-col'>
-            <div className='flex flex-col sm:flex-row p-10'>
-                <div id='leftside' className="sm:pl-10 w-full sm:w-1/4 order-last sm:order-first mt-2">
+            <div className='flex flex-col lg:flex-row p-10'>
+                <div id='leftside' className="lg:pl-10 w-full lg:w-1/4 order-last lg:order-first mt-2">
                     <p className='text-sm text-white leading-relaxed'>PT. Infrastruktur Digital Indonesia (Ideanet)</p>
                     <p className='text-sm text-white leading-relaxed'>The Convergence Indonesia Lantai 22</p>
                     <p className='text-sm text-white leading-relaxed'>Kawasan Rasuna Epicentrum, Jl. HR. Rasuna Said, Jakarta 12940</p>
                     <p className='text-sm text-white leading-relaxed'>Tel. (021) 150188, WA. (+62) 811-1500-508</p>
                     <p className='text-sm text-white leading-relaxed'>helpdesk@infrastruktur-digital.id</p>
                 </div>
-                <div id='rightside' className="w-full sm:w-3/4 justify-center mb-5 grid grid-cols-2 sm:grid-cols-4 sm:pl-10">
+                <div id='rightside' className="w-full md:w-full lg:w-3/4 justify-center mb-5 grid grid-cols-2 md:grid-cols-4 md:pl-10">
                     <div className="list-menu mb-5">
                         <h5 className='text-xl font-semibold text-white leading-loose'>Retail Product</h5>
                         <a href='#' className='text-sm text-white'>Home Internet</a>

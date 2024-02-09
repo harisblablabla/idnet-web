@@ -23,18 +23,18 @@ export default function Home() {
       <div className="sm:container sm:mb-20 sm:mx-auto">
         <section id='carousel' className="carousel w-full py-5 z-0 hidden md:flex">
           <div id="slide1" className="carousel-item relative w-full">
-            <Image src="/assets/home_cover.jpg" alt={'home cover'} width={1000} height={750} className='w-10/12 rounded-2xl ms-auto h-80v object-cover' />
+            <Image src="/assets/home_cover.jpg" alt={'home cover'} width={1000} height={750} className='w-4/5 rounded-2xl ms-auto h-80v object-cover' />
             <div className="absolute flex right-6 top-[45%]">
               <a href="#slide2" className=" btn btn-circle bg-white border-none text-3xl text-primary">❯</a>
             </div>
           </div>
           <div id="slide2" className="carousel-item relative w-full">
-            <Image src="/assets/home_cover2.jpg" alt={'home cover 2'} width={1000} height={750} className='w-10/12 rounded-2xl ms-auto h-80v object-cover' />
+            <Image src="/assets/home_cover2.jpg" alt={'home cover 2'} width={1000} height={750} className='w-4/5 rounded-2xl ms-auto h-80v object-cover' />
             <div className="absolute flex right-6 top-[45%]">
               <a href="#slide1" className=" btn btn-circle bg-white border-none text-3xl text-primary">❯</a>
             </div>
           </div>
-          <div className="absolute top-1/3 bg-white p-10 rounded-2xl w-2/5">
+          <div className="absolute md:top-1/4 lg:top-[30%] md:w-1/2 xl:w-4/12 bg-white p-10 rounded-2xl">
             <h4 className='font-semibold text-4xl mb-5 text-gray-900'>Amplifying your ideas, one connection at a time.</h4>
             <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia&apos;s digital transformation through neutral ICT infrastructure and innovative solutions.</p>
             <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary btn-wide ">Subscribe Now</Link>
@@ -127,10 +127,10 @@ export default function Home() {
       <section id='our product'>
         <div className="flex flex-col justify-center items-center">
           <h2 className='text-neutral-700 font-semibold text-center text-2xl w-4/5 lg:w-1/2 pt-10 mb-10'>No boundaries, endless possibilities. Explore the Ideanet cutting-edge solutions.</h2>
-          <div className="container">
+          <div className="container md:w-4/5">
 
             <h2 className='text-primary-700 text-xl font-semibold mb-5 text-center sm:text-left'>Internet Service</h2>
-            <div className="sm:grid sm:grid-cols-2 mb-5">
+            <div className="md:grid md:grid-cols-2 mb-5">
               <Image src={'/assets/home_product1.png'} alt={'solution for retail'} width={500} height={600} className='object-cover mx-auto w-3/4 mb-5 sm:order-2' />
               <div id='cardproduct' className="bg-white rounded-2xl py-10 px-8 w-4/5 sm:w-full mb-10 sm:order-1 mx-auto shadow-[0_0_10px_3px_rgba(229,229,229)] h-min">
                 <p className='mb-5 text-neutral-700 text-sm'><b>1. Home or office,</b> From casual browsing to powering business empires, our internet plans ignite your digital world.</p>
@@ -142,7 +142,7 @@ export default function Home() {
             </div>
 
             <h2 className='text-primary-700 text-xl font-semibold mb-5 text-center sm:text-left'>Ideanet as a Service(IaaS)</h2>
-            <div className="sm:grid sm:grid-cols-2 mb-5">
+            <div className="md:grid md:grid-cols-2 mb-5">
               <Image src={'/assets/home_product2.svg'} alt={'solution for retail'} width={1000} height={1000} className='object-cover mx-auto w-3/4 mb-5' />
               <div id='cardproduct' className="bg-white rounded-2xl py-10 px-8 w-4/5 sm:w-full mb-10 mx-auto shadow-[0_0_10px_3px_rgba(229,229,229)] h-min">
                 <p className='mb-5 text-neutral-700 text-sm'><b>1. Smart Parking,</b>  Optimize parking management with real-time data insights, automated guidance, and seamless payment integrations.</p>
@@ -158,7 +158,7 @@ export default function Home() {
       <section id='partner'>
         <div className="flex flex-col justify-center items-center mb-10">
           <h2 className='text-neutral-700 font-semibold text-center text-2xl w-4/5 lg:w-1/2 mb-10'>A diverse range of partners, From individual to industry giants, we empower companies across every field.</h2>
-          <div className="container">
+          <div className="container sm:w-4/5">
             <div className="carousel carousel-end rounded-box">
               <div className="carousel-item">
               {/* <Image src="/assets/home_cover.jpg" alt={'home cover'} width={500} height={250} className='object-cover' /> */}
@@ -188,7 +188,7 @@ export default function Home() {
       </section>
 
       <section>
-        <div className="flex flex-col justify-center items-center mb-10">
+        <div className="flex flex-col justify-center items-center mb-10 mx-auto">
           <h2 className='bg-gradient-to-r from-secondary to-third bg-clip-text text-transparent font-semibold text-3xl sm:text-4xl text-center w-4/5 mb-10'>Ready to experience the future of connection? Join Ideanet, your digital partner in success.</h2>
           <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary btn-wide ">Subscribe Now</Link>
 

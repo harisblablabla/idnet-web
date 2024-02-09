@@ -41,7 +41,9 @@ const config: Config = {
       },
       height: {
         "25v": "25vh",
+        "33v": "33vh",
         "50v": "50vh",
+        "60v": "60vh",
         "75v": "75vh",
         "80v": "80vh"
       },

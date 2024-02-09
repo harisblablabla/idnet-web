@@ -20,8 +20,8 @@ const page = () => {
                     <div className="divider divider-neutral my-10 w-4/5 mx-auto"></div>
 
                     <section id='ict infrastructure'>
-                        <h2 className='text-neutral-700 font-semibold w-4/5 sm:w-full text-xl mb-5 mx-auto'>Neutral ICT Infrastructure</h2>
-                        <p className=' text-neutral-700 text-base w-4/5 sm:w-full mb-5 mx-auto'> At Ideanet (IDI), we believe everyone deserves equal access to the digital world. That&apos;s why we aren&apos;t just another internet provider; we&apos;re the invisible highway that powers countless connections. Imagine us as the central exchange in a bustling digital city, connecting different providers (telecoms, TV, etc.) to deliver seamless experiences to you.</p>
+                        <h2 className='text-neutral-700 font-semibold w-4/5 text-xl mb-5 mx-auto'>Neutral ICT Infrastructure</h2>
+                        <p className=' text-neutral-700 text-base w-4/5 mb-5 mx-auto'> At Ideanet (IDI), we believe everyone deserves equal access to the digital world. That&apos;s why we aren&apos;t just another internet provider; we&apos;re the invisible highway that powers countless connections. Imagine us as the central exchange in a bustling digital city, connecting different providers (telecoms, TV, etc.) to deliver seamless experiences to you.</p>
                         <Image src="/assets/about_neutral_ict.png" alt={'home cover'} width={900} height={400} className='object-cover mx-auto sm:w-3/5 w-4/5 mb-24' />
 
                         <div className="sm:flex sm:flex-wrap justify-center container sm:mb-0 gap-6">
@@ -59,18 +59,18 @@ const page = () => {
                         </div>
                     </section>
 
-                    <section id='vision'>
-                        <h2 className='text-neutral-700 font-semibold w-4/5 sm:w-full text-xl mb-5 mx-auto'>Vision & Mission</h2>
-                        <p className=' text-neutral-700 text-base w-4/5 sm:w-full sm:mb-10 mx-auto'> We build the invisible highways of communication, offer them to everyone without bias, keep them running smoothly, and constantly push
+                    <section id='vision' className='w-4/5 mx-auto'>
+                        <h2 className='text-neutral-700 font-semibold w-full text-xl mb-5 mx-auto'>Vision & Mission</h2>
+                        <p className=' text-neutral-700 text-base w-full sm:mb-10 mx-auto'> We build the invisible highways of communication, offer them to everyone without bias, keep them running smoothly, and constantly push
                             the boundaries of speed and performance. This is our commitment to a Neutral ICT Infrastructure, where everyone has equal access to the digital world&apos;s potential.</p>
                         <div className="sm:grid sm:grid-cols-2">
-                            <Image src="/assets/about_vision.png" alt={'home cover'} width={600} height={400} className='object-contain rounded-2xl sm:order-2 w-4/5 mx-auto my-5' />
+                            <Image src="/assets/about_vision.png" alt={'home cover'} width={600} height={400} className='object-contain rounded-2xl sm:order-2 w-full mx-auto my-5' />
                             <div id='visionmissiontext' className='sm:order-1'>
-                                <h3 className='text-primary-700 font-semibold w-4/5 sm:w-full text-base mb-5 mx-auto'>Vision</h3>
-                                <p className=' text-neutral-700 text-base w-4/5 sm:w-full mb-5 mx-auto'> To be a leading company in delivering neutral infrastructure and Digital Services.</p>
-                                <h3 className='text-primary-700 font-semibold w-4/5 sm:w-full text-base mb-5 mx-auto'>Mission</h3>
-                                <li className='text-neutral-700 text-base w-4/5 sm:w-full mx-auto leading-loose'>Acquire quality cluster and buildings.</li>
-                                <li className='text-neutral-700 text-base w-4/5 sm:w-full mx-auto leading-loose'>Deliver value add service to customer through our excellent service.</li>
+                                <h3 className='text-primary-700 font-semibold w-full text-base mb-5 mx-auto'>Vision</h3>
+                                <p className=' text-neutral-700 text-base w-full mb-5 mx-auto'> To be a leading company in delivering neutral infrastructure and Digital Services.</p>
+                                <h3 className='text-primary-700 font-semibold w-full text-base mb-5 mx-auto'>Mission</h3>
+                                <li className='text-neutral-700 text-base w-full mx-auto leading-loose'>Acquire quality cluster and buildings.</li>
+                                <li className='text-neutral-700 text-base w-full mx-auto leading-loose'>Deliver value add service to customer through our excellent service.</li>
                             </div>
                         </div>
                     </section>
@@ -79,9 +79,9 @@ const page = () => {
 
                     <section id='ourteam' className='mb-10'>
                         <h2 className='text-neutral-700 font-semibold text-center text-2xl w-4/5 lg:w-1/2 mx-auto mb-5'>Our Team</h2>
-                        <p className=' text-neutral-700 text-center text-base w-4/5 sm:w-full mb-10 mx-auto'> Our team is composed of dedicated professionals with a shared passion for delivering tech services for everyone. We bring together diverse backgrounds and expertise, but we are united by a common goal:
+                        <p className=' text-neutral-700 text-center text-base w-4/5 mb-10 mx-auto'> Our team is composed of dedicated professionals with a shared passion for delivering tech services for everyone. We bring together diverse backgrounds and expertise, but we are united by a common goal:
                             to Deliver value add service to customer through our excellent service. We are committed to excellence, innovation, and exceeding client expectations.</p>
-                        <div className="flex carousel carousel-end rounded-box mx-auto w-4/5 sm:w-full justify-center">
+                        <div className="flex carousel carousel-end rounded-box mx-auto w-4/5 justify-center">
                             <div className="carousel-item">
                                 {/* <Image src="/assets/home_cover.jpg" alt={'home cover'} width={500} height={250} className='object-cover' /> */}
                                 <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" alt="Pizza" />
