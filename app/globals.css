@@ -33,3 +33,12 @@ body {
 .menu {
   background-color: white;
 }
+
+.tabs-boxed .tab-active:not(.tab-disabled):not([disabled]) {
+  background-color: #0F2243;
+  color: white;
+}
+
+.tabs-boxed .tab-active:not(.tab-disabled):not([disabled]):hover {
+  color: white;
+}
