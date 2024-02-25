@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
                                         <details open>
                                             <summary className='font-semibold'>Retail</summary>
                                             <ul>
-                                                <li><a>Retail Internet</a></li>
+                                                <li><Link href={"/retail/internet"}>Retail Internet</Link></li>
                                             </ul>
                                         </details>
                                     </li>
@@ -108,7 +108,7 @@ const Navbar: React.FC = () => {
                                 <li>
                                     <h2 className="menu-title text-gray-900">Retail Product</h2>
                                     <ul>
-                                        <li><a>Retail Internet</a></li>
+                                        <li><Link href={"retail/internet"}>Retail Internet</Link></li>
                                     </ul>
                                 </li>
                             </ul>
