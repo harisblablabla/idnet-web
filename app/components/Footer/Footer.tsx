@@ -35,8 +35,8 @@ function Footer() {
                         <h5 className='text-xl font-semibold text-white leading-loose'>Follow Us</h5>
                         <a href='#' className='text-sm text-white leading-loose block'>Contact Us</a>
                         <a href='#' className='text-sm text-white leading-loose'><Image src={'/assets/logo_instagram.png'} alt={'logo instagram'} className='inline-block mr-2' width={20} height={20} />Instagram</a>
-                        <a href='#' className='text-sm text-white leading-loose block'><Image src={'/assets/logo_facebook.png'} alt={'logo fabecook'} className='inline-block mr-2' width={20} height={20} />Facebook</a>
-                        <a href='#' className='text-sm text-white leading-loose block'><Image src={'/assets/logo_linkedin.png'} alt={'logo linkedin'} className='inline-block mr-2' width={20} height={20} />Linkedin</a>
+                        {/* <a href='#' className='text-sm text-white leading-loose block'><Image src={'/assets/logo_facebook.png'} alt={'logo fabecook'} className='inline-block mr-2' width={20} height={20} />Facebook</a> */}
+                        {/* <a href='#' className='text-sm text-white leading-loose block'><Image src={'/assets/logo_linkedin.png'} alt={'logo linkedin'} className='inline-block mr-2' width={20} height={20} />Linkedin</a> */}
                     </div>
                 </div>
             </div>

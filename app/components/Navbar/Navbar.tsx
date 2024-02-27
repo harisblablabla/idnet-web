@@ -38,12 +38,12 @@ const Navbar: React.FC = () => {
                     <div tabIndex={0} role="button" className="btn btn-ghost">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content z-[1] mt-3 p-5 shadow bg-base-200 w-72 rounded-box text-neutral-700">
-                        <li>
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content z-[1] mt-3 p-5 shadow-[0_0_10px_3px_rgba(229,229,229)] bg-base-200 w-72 rounded-box text-neutral-700">
+                        <li className='pb-2.5'>
                             <details>
-                                <summary>Product</summary>
+                                <summary className='pb-2.5'>Product</summary>
                                 <ul>
-                                    <li>
+                                    <li className='pb-2.5'>
                                         <details open>
                                             <summary className='font-semibold'>Retail</summary>
                                             <ul>
@@ -55,26 +55,27 @@ const Navbar: React.FC = () => {
                                         <details open>
                                             <summary className='font-semibold'>Enterprise</summary>
                                             <ul>
-                                                <li><a>Enterprise Internet</a></li>
-                                                <li><a>Ideanet as a Services</a></li>
-                                                <li><a>Connectivity</a></li>
+                                                <li><Link href={'#'} className='pointer-events-none text-slate-300'>Enterprise Internet</Link></li>
+                                                <li><Link href={'#'} className='pointer-events-none text-slate-300'>Connectivity</Link></li>
                                             </ul>
                                         </details>
                                     </li>
                                 </ul>
                             </details>
                         </li>
-                        <li>
+                        <li className='pb-2.5'><Link className='pointer-events-none text-slate-300' href={'https://daftar.ideanet.net.id/helpdesk/ticket-form'}>Solution</Link></li>
+                        <li className='pb-2.5'>
                             <details>
                                 <summary>About</summary>
                                 <ul>
                                 <li><Link href={'/about'}>About Us</Link></li>
-                                <li><Link href={'#'}>Careers</Link></li>
+                                <li><Link className='pointer-events-none text-slate-300' href={'#'}>Careers</Link></li>
                                 </ul>
                             </details>
                         </li>
-                        <li><Link href={'https://daftar.ideanet.net.id/helpdesk/ticket-form'}>Contact</Link></li>
-                        <li>
+                        <li className=''><Link href={'https://daftar.ideanet.net.id/helpdesk/ticket-form'}>Contact</Link></li>
+                        <div className="divider w-full mb-2.5"></div>
+                        <li className='pb-2.5'>
                             <details>
                                 <summary>{lang}</summary>
                                 <ul>
@@ -100,9 +101,8 @@ const Navbar: React.FC = () => {
                                 <li>
                                     <h2 className="menu-title text-gray-900">Enterprise Product</h2>
                                     <ul>
-                                        <li><a>Enterprise Internet</a></li>
-                                        <li><a>Ideanet as a Service</a></li>
-                                        <li><a>Connectivity</a></li>
+                                        <li><Link href={'#'} className='pointer-events-none text-slate-300'>Enterprise Internet</Link></li>
+                                        <li><Link href={'#'} className='pointer-events-none text-slate-300'>Connectivity</Link></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -115,12 +115,13 @@ const Navbar: React.FC = () => {
                         )}
 
                     </li>
+                    <li><Link href={'https://daftar.ideanet.net.id/helpdesk/ticket-form'}>Solutions</Link></li>
                     <li className='relative'>
                         <button onMouseOver={() => toggleMenu('about')} onClick={() => toggleMenu('about')}>About {openAbout ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp} />}</button>
                         {openAbout && (
                             <ul className="absolute top-12 -left-5 menu bg-base-200 w-48 rounded-box shadow-[0_0_10px_3px_rgba(229,229,229)]">
                                 <li><Link href={"/about"}>About Us</Link></li>
-                                <li><Link href={'/'}>Careers</Link></li>
+                                <li><Link href={'/'} className='pointer-events-none text-slate-300'>Careers</Link></li>
                             </ul>
                         )}
                     </li>

@@ -189,7 +189,7 @@ export default function Home() {
 
       <section>
         <div className="flex flex-col justify-center items-center mb-10 mx-auto">
-          <h2 className='bg-gradient-to-r from-secondary to-third bg-clip-text text-transparent font-semibold text-3xl sm:text-4xl text-center w-4/5 mb-10'>Ready to experience the future of connection? Join Ideanet, your digital partner in success.</h2>
+          <h2 className='text-primary-800 font-semibold text-3xl sm:text-4xl text-center w-4/5 mb-10'>Ready to experience the future of connection? Join Ideanet, your digital partner in success.</h2>
           <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary btn-wide ">Subscribe Now</Link>
 
         </div>
