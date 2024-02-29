@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
                                         <details open>
                                             <summary className='font-semibold'>Enterprise</summary>
                                             <ul>
-                                                <li><Link href={'#'} className='pointer-events-none text-slate-300'>Enterprise Internet</Link></li>
+                                                <li><Link href={'/enterprise/internet'} >Enterprise Internet</Link></li>
                                                 <li><Link href={'#'} className='pointer-events-none text-slate-300'>Connectivity</Link></li>
                                             </ul>
                                         </details>
@@ -101,7 +101,7 @@ const Navbar: React.FC = () => {
                                 <li>
                                     <h2 className="menu-title text-gray-900">Enterprise Product</h2>
                                     <ul>
-                                        <li><Link href={'#'} className='pointer-events-none text-slate-300'>Enterprise Internet</Link></li>
+                                        <li><Link href={'enterprise/internet'} >Enterprise Internet</Link></li>
                                         <li><Link href={'#'} className='pointer-events-none text-slate-300'>Connectivity</Link></li>
                                     </ul>
                                 </li>
