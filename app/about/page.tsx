@@ -26,34 +26,34 @@ const page = () => {
 
                         <div className="sm:flex sm:flex-wrap justify-center container sm:mb-0 gap-6">
                             <div className="relative bg-white rounded-2xl mx-auto text-center pb-10 pt-16 px-8 w-4/5 sm:w-64 md:w-72 mb-20 shadow-[0_0_10px_3px_rgba(229,229,229)]">
-                                <div className="w-full px-7 absolute -top-1/4 left-0">
-                                    <Image src={'/assets/about_card.png'} alt={'solution for retail'} width={100} height={100} className=' -top-1/2 left-1/2  object-cover mx-auto  mb-5 rounded-2xl' />
+                                <div className="w-full px-7 absolute -top-1/3 left-0">
+                                    <Image src={'/assets/about_card1.webp'} alt={'operator indepedency'} width={120} height={120} className=' -top-1/2 left-1/2  object-cover mx-auto  mb-5 rounded-2xl' />
                                 </div>
                                 <h6 className='text-gray-900 font-bold text-sm mb-2.5'>Operator Indepedency</h6>
                                 <p className=' text-neutral-500 text-sm'> could be used for various services (Internet, IPTV, Telephony).</p>
                             </div>
 
                             <div className="relative bg-white rounded-2xl mx-auto text-center pb-10 pt-16 px-8 w-4/5 sm:w-64 md:w-72 mb-20 shadow-[0_0_10px_3px_rgba(229,229,229)]">
-                                <div className="w-full px-7 absolute -top-1/4 left-0">
-                                    <Image src={'/assets/about_card.png'} alt={'solution for retail'} width={100} height={100} className=' -top-1/2 left-1/2  object-cover mx-auto  mb-5 rounded-2xl' />
+                                <div className="w-full px-7 absolute -top-1/3 left-0">
+                                    <Image src={'/assets/about_card2.webp'} alt={'flexible'} width={120} height={120} className=' -top-1/2 left-1/2  object-cover mx-auto  mb-5 rounded-2xl' />
                                 </div>
                                 <h6 className='text-gray-900 font-bold text-sm mb-2.5'>Flexible</h6>
                                 <p className=' text-neutral-500 text-sm'> in dealing with service changes, service additions and service improvements from each operator.</p>
                             </div>
 
                             <div className="relative bg-white rounded-2xl mx-auto text-center pb-10 pt-16 px-8 w-4/5 sm:w-64 md:w-72 mb-20 shadow-[0_0_10px_3px_rgba(229,229,229)]">
-                                <div className="w-full px-7 absolute -top-1/4 left-0">
-                                    <Image src={'/assets/about_card.png'} alt={'solution for retail'} width={100} height={100} className=' -top-1/2 left-1/2  object-cover mx-auto  mb-5 rounded-2xl' />
+                                <div className="w-full px-7 absolute -top-1/3 left-0">
+                                    <Image src={'/assets/about_card3.webp'} alt={'streamlined'} width={120} height={120} className=' -top-1/2 left-1/2  object-cover mx-auto  mb-5 rounded-2xl' />
                                 </div>
-                                <h6 className='text-gray-900 font-bold text-sm mb-2.5'>Neat and clean</h6>
+                                <h6 className='text-gray-900 font-bold text-sm mb-2.5'>Streamlined</h6>
                                 <p className=' text-neutral-500 text-sm'> not overlapping and simple.</p>
                             </div>
 
                             <div className="relative bg-white rounded-2xl mx-auto text-center pb-10 pt-16 px-8 w-4/5 sm:w-64 md:w-72 mb-20 shadow-[0_0_10px_3px_rgba(229,229,229)]">
-                                <div className="w-full px-7 absolute -top-1/4 left-0">
-                                    <Image src={'/assets/about_card.png'} alt={'solution for retail'} width={100} height={100} className=' -top-1/2 left-1/2  object-cover mx-auto  mb-5 rounded-2xl' />
+                                <div className="w-full px-7 absolute -top-1/3 left-0">
+                                    <Image src={'/assets/about_card4.webp'} alt={'advanced'} width={120} height={120} className=' -top-1/2 left-1/2  object-cover mx-auto  mb-5 rounded-2xl' />
                                 </div>
-                                <h6 className='text-gray-900 font-bold text-sm mb-2.5'>Sophisticated</h6>
+                                <h6 className='text-gray-900 font-bold text-sm mb-2.5'>Advanced</h6>
                                 <p className=' text-neutral-500 text-sm'> accommodate future technological developments.</p>
                             </div>
                         </div>
