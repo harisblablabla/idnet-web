@@ -33,7 +33,13 @@ const config: Config = {
           800: '#1D6F9A',
         },
         third: {
-          DEFAULT: '#D1345B'
+          200: '#E89BAF',
+          300: '#E17A94',
+          400: '#D95979',
+          DEFAULT: '#D1345B',
+          600: '#B72A4D',
+          700: '#96223F',
+          800: '#741A31',
         },
         bgc: {
           '2': '#F2F6FA'
