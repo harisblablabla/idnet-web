@@ -1,8 +1,15 @@
-export const dataArray = [
+export const dataRetail = [
     { paket: 'Airborne Silver', value:'30 Mbps' },
     { paket: 'Airborne Gold', value:'50 Mbps' },
     { paket: 'Airborne Platinum', value:'75 Mbps' },
     { paket: 'Airborne Signature', value:'100 Mbps' },
+]
+
+export const dataEnterprise = [
+    { paket: 'Enterprise Silver', value:'30 Mbps' },
+    { paket: 'Enterprise Gold', value:'50 Mbps' },
+    { paket: 'Enterprise Platinum', value:'75 Mbps' },
+    { paket: 'Enterprise Signature', value:'100 Mbps' },
 ]
 
 export const testimony = [

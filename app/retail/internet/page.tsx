@@ -1,6 +1,6 @@
 import Navbar from '@/app/components/Navbar/Navbar'
 import TabInternet from '@/app/components/InternetPage/TabInternet'
-import { faCalendarPlus, faChartColumn, faEthernet, faInfinity, faMoneyBillWave, faPercent, faRocket, faUser, faWifi } from '@fortawesome/free-solid-svg-icons'
+import { faCalendarPlus, faChartColumn, faEthernet, faHeadset, faInfinity, faMoneyBillWave, faPercent, faRocket, faUser, faWifi } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
@@ -41,7 +41,7 @@ export default function page() {
                                     <p className='mb-5 text-neutral-700 text-sm'><b>Wired or wireless, you choose:</b>  Whether you crave the fiber-optic backbone or the wireless revolution, Airborne lets you connect on your terms. It&apos;s the internet, your way.</p>
                                     <FontAwesomeIcon size='2x' icon={faChartColumn} style={{ color: "163364" }} className='float-left pr-7 py-2' />
                                     <p className='mb-5 text-neutral-700 text-sm'><b>MRTG Monitoring:</b> With MRTG monitoring, you&apos;re always in the pilot&apos;s seat, seeing your internet performance unfold in real-time. No black boxes, just clear skies ahead.</p>
-                                    <FontAwesomeIcon size='2x' icon={faUser} style={{ color: "163364" }} className='float-left pr-8 py-2' />
+                                    <FontAwesomeIcon size='2x' icon={faHeadset} style={{ color: "163364" }} className='float-left pr-8 py-2' />
                                     <p className='mb-5 text-neutral-700 text-sm'><b> NOC Support: </b>Take flight with peace of mind, knowing Airborne&apos;s NOC team has your back 24/7. Any turbulence? They&apos;ll navigate you through it smoothly.</p>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@ export default function page() {
                 <section id='tabpackage'>
                     <div className="flex flex-col mx-auto justify-center items-center">
                         <h2 className='text-neutral-700 font-semibold text-center text-2xl w-4/5 lg:w-1/2 pt-10 mb-10'>Choose your Plan According to Your Needs.</h2>
-                        <TabInternet />
+                        <TabInternet segmentasi={'retail'} />
                     </div>
                 </section>
 
