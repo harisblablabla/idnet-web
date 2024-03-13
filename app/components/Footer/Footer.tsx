@@ -14,12 +14,12 @@ function Footer() {
                 </div>
                 <div id='rightside' className="w-full md:w-full lg:w-3/4 justify-center mb-5 grid grid-cols-2 md:grid-cols-4 md:pl-10">
                     <div className="list-menu mb-5">
-                        <h5 className='text-xl font-semibold text-white leading-loose'>Retail Product</h5>
+                        <h5 className='text-xl font-semibold text-white leading-loose'>Retail</h5>
                         <a href='#' className='text-sm text-white'>Home Internet</a>
                     </div>
 
                     <div className="list-menu mb-5">
-                        <h5 className='text-xl font-semibold text-white leading-loose'>Enterprise Product</h5>
+                        <h5 className='text-xl font-semibold text-white leading-loose'>Enterprise</h5>
                         <a href='#' className='text-sm text-white leading-loose block'>Enterprise Internet</a>
                         <a href='#' className='text-sm text-white leading-loose block'>Ideanet as a Service (IaaS)</a>
                         <a href='#' className='text-sm text-white leading-loose block'>Connectivity</a>

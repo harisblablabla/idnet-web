@@ -10,24 +10,23 @@ const Navbar: React.FC = () => {
 
     const [productMenuOpen, setProductMenuOpen] = useState(false);
     const [openAbout, setOpenAbout] = useState(false)
+    const [openSolution, setOpenSolution] = useState(false)
     const [openLang, setOpenLang] = useState(false)
     const [lang, setLang] = useState('EN')
 
     const toggleMenu = (id: string) => {
-        if (id === 'product') {
-          setProductMenuOpen(prevOpen => !prevOpen);
-          setOpenAbout(false)
-          setOpenLang(false)
-        } else if(id === 'about') {
-            setOpenAbout(prev => !prev)
-            setProductMenuOpen(false)
-            setOpenLang(false)
-        } else {
-            setOpenLang(prev => !prev)
-            setProductMenuOpen(false)
-            setOpenAbout(false)
-        }
-      }
+
+        const isProduct = id === 'product';
+        const isAbout = id === 'about';
+        const isSolution = id === 'solution';
+        const isLang = id === 'lang';
+      
+        setProductMenuOpen(current => isProduct ? !current : false);
+        setOpenAbout(current => isAbout ? !current : false);
+        setOpenSolution(current => isSolution ? !current : false);
+        setOpenLang(current => isLang ? !current : false);
+
+    }
 
     return (
         <div className="navbar bg-white ">
@@ -56,14 +55,23 @@ const Navbar: React.FC = () => {
                                             <summary className='font-semibold'>Enterprise</summary>
                                             <ul>
                                                 <li><Link href={'/enterprise/internet'} >Enterprise Internet</Link></li>
-                                                <li><Link href={'#'} className='pointer-events-none text-slate-300'>Connectivity</Link></li>
+                                                <li><Link href={'/enterprise/connectivity'} className='pointer-events-none text-slate-300'>Connectivity</Link></li>
                                             </ul>
                                         </details>
                                     </li>
                                 </ul>
                             </details>
                         </li>
-                        <li className='pb-2.5'><Link className='pointer-events-none text-slate-300' href={'https://daftar.ideanet.net.id/helpdesk/ticket-form'}>Solution</Link></li>
+                        <li className='pb-2.5'>
+                            <details>
+                                <summary>Solutions</summary>
+                                <ul>
+                                    <li><Link className='pointer-events-none text-slate-300' href={'#'}>Ideanet as a Services(IaaS)</Link></li>
+                                    <li><Link href={'http://nms.infrastruktur-digital.id/graph_view.php'}>Traffic Monitoring (MRTG)</Link></li>
+                                    <li><Link href={'http://speedtest.infrastruktur-digital.id/'}>Speed Test</Link></li>
+                                </ul>
+                            </details>
+                        </li>
                         <li className='pb-2.5'>
                             <details>
                                 <summary>About</summary>
@@ -101,21 +109,30 @@ const Navbar: React.FC = () => {
                                 <li>
                                     <h2 className="menu-title text-gray-900">Enterprise Product</h2>
                                     <ul>
-                                        <li><Link href={'enterprise/internet'} >Enterprise Internet</Link></li>
-                                        <li><Link href={'#'} className='pointer-events-none text-slate-300'>Connectivity</Link></li>
+                                        <li><Link href={'/enterprise/internet'} >Enterprise Internet</Link></li>
+                                        <li><Link href={'/enterprise/connectivity'} className='pointer-events-none text-slate-300'>Connectivity</Link></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <h2 className="menu-title text-gray-900">Retail Product</h2>
                                     <ul>
-                                        <li><Link href={"retail/internet"}>Retail Internet</Link></li>
+                                        <li><Link href={"/retail/internet"}>Retail Internet</Link></li>
                                     </ul>
                                 </li>
                             </ul>
                         )}
 
                     </li>
-                    <li><Link href={'https://daftar.ideanet.net.id/helpdesk/ticket-form'}>Solutions</Link></li>
+                    <li className='relative'>
+                    <button onMouseOver={() => toggleMenu('solution')} onClick={() => toggleMenu('solution')}>Solutions {openSolution ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp} />}</button>
+                        {openSolution && (
+                            <ul className="absolute top-12 -left-5 menu bg-base-200 w-64 rounded-box shadow-[0_0_10px_3px_rgba(229,229,229)]">
+                                <li><Link href={"#"} className='pointer-events-none text-slate-300'>Ideanet as a Services(IaaS)</Link></li>
+                                <li><Link href={'http://nms.infrastruktur-digital.id/graph_view.php'} >Traffic Monitoring(MRTG)</Link></li>
+                                <li><Link href={'http://speedtest.infrastruktur-digital.id/'} >Speed Test</Link></li>
+                            </ul>
+                        )}
+                    </li>
                     <li className='relative'>
                         <button onMouseOver={() => toggleMenu('about')} onClick={() => toggleMenu('about')}>About {openAbout ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp} />}</button>
                         {openAbout && (
