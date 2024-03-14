@@ -57,7 +57,7 @@ const page = () => {
                         </div>
                         <div className="mx-auto text-center pb-10 pt-5 px-8 w-4/5 sm:w-72 md:w-96 mb-10">
                             <FontAwesomeIcon size='4x' icon={faSignal} style={{ color: "163364" }} className='pr-4 py-2.5' />
-                            <h6 className='text-gray-900 font-bold text-sm mb-2.5'>Stability Internet</h6>
+                            <h6 className='text-gray-900 font-bold text-sm mb-2.5'>Stable Internet</h6>
                             <p className=' text-neutral-700 text-sm'>Our network is designed with redundancy and resilience at its core, ensuring your
                              connection stays up and running when you need it most.</p>
                         </div>

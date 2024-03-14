@@ -47,7 +47,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <h6 className='mx-auto w-4/5 text-left sm:text-center mb-10 text-white text-sm'>Copyright ©2023 All rights reserved. PT. Infrastruktur Digital Indonesia (Ideanet)</h6>
+            <h6 className='mx-auto w-4/5 text-left sm:text-center mb-10 text-white text-sm'>Copyright ©2024 All rights reserved. PT. Infrastruktur Digital Indonesia (Ideanet)</h6>
         </section>
 
     )

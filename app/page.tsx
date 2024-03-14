@@ -2,8 +2,12 @@ import Image from 'next/image'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Link from 'next/link'
+import Carousel from './components/Carousel/Carousel'
+import { carClient } from './components/Carousel/data'
 
 export default function Home() {
+
+  const carousel = carClient
 
   return (
     <main className="min-h-screen flex-col justify-center">
@@ -51,13 +55,13 @@ export default function Home() {
               <h2 className='text-primary-700 text-xl font-semibold mb-5'>Solution for retail</h2>
               <Image src={'/assets/solution_retail.webp'} alt={'solution for retail'} width={500} height={500} className='object-cover mx-auto w-1/2 mb-5' />
               <p className='mb-8 text-neutral-700'> Elevate your everyday. Experience seamless internet, captivating TV, and clear phone calls with Ideanet personal solutions.</p>
-              <a href='#' className='text-primary font-bold'>More info ❯</a>
+              <Link href={"/retail/internet"} className='text-primary font-bold'>More info ❯</Link>
             </div>
             <div className="bg-white rounded-2xl mx-auto text-center py-10 px-8 w-4/5 sm:w-2/5 mb-10">
               <h2 className='text-primary-700 text-xl font-semibold mb-5'>Solution for enterprise</h2>
               <Image src={'/assets/solution_enterprise.webp'} alt={'solution for enterprise'} width={500} height={500} className='object-cover w-1/2  mx-auto mb-5' />
               <p className='mb-8 text-neutral-700'> In today&apos;s fast-paced world, your IT infrastructure needs to be agile and secure. Ideanet enterprise solutions provide the foundation for success.</p>
-              <a href='#' className='text-primary font-bold'>More info ❯</a>
+              <Link href={"/enterprise/internet"} className='text-primary font-bold'>More info ❯</Link>
             </div>
           </div>
 
@@ -137,7 +141,7 @@ export default function Home() {
                 <p className='mb-5 text-neutral-700 text-sm'><b>2. Reliability,</b> Stay connected and productive, backed by our robust network and dedicated support.</p>
                 <p className='mb-5 text-neutral-700 text-sm'><b>3. Simple and secure,</b> Enjoy effortless setup, intuitive tools, and advanced security features for peace of mind.</p>
                 <p className='mb-5 text-neutral-700 text-sm'><b>4. Scalability,</b> Grow your connection as you grow, with flexible plans that adapt to your ever-changing needs.</p>
-                <button className="btn btn-outline btn-secondary btn-sm">More info</button>
+                <Link href={"/retail/internet"} className="btn btn-outline btn-secondary btn-sm">More info</Link>
               </div>
             </div>
 
@@ -148,7 +152,7 @@ export default function Home() {
                 <p className='mb-5 text-neutral-700 text-sm'><b>1. Smart Parking,</b>  Optimize parking management with real-time data insights, automated guidance, and seamless payment integrations.</p>
                 <p className='mb-5 text-neutral-700 text-sm'><b>2. Smart Cluster,</b> Build secure and scalable computing clusters for high-performance applications like data analytics, and scientific research.</p>
                 <p className='mb-5 text-neutral-700 text-sm'><b>3. Smart Healthcare,</b> Revolutionize healthcare delivery with connected devices, remote monitoring, and advanced data analysis tools.</p>
-                <button className="btn btn-outline btn-secondary btn-sm">More info</button>
+                <Link href={"/solution/iaas"} className="btn btn-outline btn-secondary btn-sm">More info</Link>
               </div>
             </div>
 
@@ -159,7 +163,7 @@ export default function Home() {
                 <p className='mb-5 text-neutral-700 text-sm'><b>1. Easy Deployment,</b> Get up and running quickly with minimal disruption to your business.</p>
                 <p className='mb-5 text-neutral-700 text-sm'><b>2. 24/7 Support,</b> Our team is here to support you, ensuring your network runs smoothly around the clock.</p>
                 <p className='mb-5 text-neutral-700 text-sm'><b>3. Customizable Options,</b> Tailor your SD-WAN solution to fit your specific needs and objectives.</p>
-                <button className="btn btn-outline btn-secondary btn-sm">More info</button>
+                <Link href={"/enterprise/connectivity"} className="btn btn-outline btn-secondary btn-sm">More info</Link>
               </div>
             </div>
           </div>
@@ -170,32 +174,7 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center mb-10">
           <h2 className='text-neutral-700 font-semibold text-center text-2xl w-4/5 lg:w-1/2 mb-10'>A diverse range of partners, From individual to giants enterprise, we empower companies across every field.</h2>
           <div className="container sm:w-4/5">
-            <div className="carousel carousel-end rounded-box">
-              <div className="carousel-item">
-                <Image src="/assets/client1.webp" alt={'ciputra'} width={200} height={200} className='object-cover' />
-              </div>
-              <div className="carousel-item">
-                <Image src="/assets/client2.webp" alt={'milcit'} width={200} height={200} className='object-cover' />
-              </div>
-              <div className="carousel-item">
-                <Image src="/assets/client3.webp" alt={'pakuwon'} width={200} height={200} className='object-cover' />
-              </div>
-              <div className="carousel-item">
-                <Image src="/assets/client4.webp" alt={'anandamaya'} width={200} height={200} className='object-cover' />
-              </div>
-              <div className="carousel-item">
-                <Image src="/assets/client5.webp" alt={'pakubuwono menteng'} width={200} height={200} className='object-cover' />
-              </div>
-              <div className="carousel-item">
-                <Image src="/assets/client6.webp" alt={'itdc'} width={200} height={200} className='object-cover' />
-              </div>
-              <div className="carousel-item">
-                <Image src="/assets/client7.webp" alt={'pakubuwono spring'} width={200} height={200} className='object-cover' />
-              </div>
-              <div className="carousel-item">
-                <Image src="/assets/client8.webp" alt={'mcc'} width={200} height={200} className='object-cover' />
-              </div>
-            </div>
+            <Carousel items={carousel} />
           </div>
         </div>
       </section>
