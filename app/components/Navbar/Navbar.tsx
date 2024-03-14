@@ -25,7 +25,6 @@ const Navbar: React.FC = () => {
         setOpenAbout(current => isAbout ? !current : false);
         setOpenSolution(current => isSolution ? !current : false);
         setOpenLang(current => isLang ? !current : false);
-
     }
 
     return (
@@ -66,7 +65,7 @@ const Navbar: React.FC = () => {
                             <details>
                                 <summary>Solutions</summary>
                                 <ul>
-                                    <li><Link className='pointer-events-none text-slate-300' href={'#'}>Ideanet as a Services(IaaS)</Link></li>
+                                    <li><Link className='pointer-events-none text-slate-300' href={'/solution/iaas'}>Ideanet as a Services(IaaS)</Link></li>
                                     <li><Link href={'http://nms.infrastruktur-digital.id/graph_view.php'}>Traffic Monitoring (MRTG)</Link></li>
                                     <li><Link href={'http://speedtest.infrastruktur-digital.id/'}>Speed Test</Link></li>
                                 </ul>
@@ -127,7 +126,7 @@ const Navbar: React.FC = () => {
                     <button onMouseOver={() => toggleMenu('solution')} onClick={() => toggleMenu('solution')}>Solutions {openSolution ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp} />}</button>
                         {openSolution && (
                             <ul className="absolute top-12 -left-5 menu bg-base-200 w-64 rounded-box shadow-[0_0_10px_3px_rgba(229,229,229)]">
-                                <li><Link href={"#"} className='pointer-events-none text-slate-300'>Ideanet as a Services(IaaS)</Link></li>
+                                <li><Link href={"/solution/iaas"} className='pointer-events-none text-slate-300'>Ideanet as a Services(IaaS)</Link></li>
                                 <li><Link href={'http://nms.infrastruktur-digital.id/graph_view.php'} >Traffic Monitoring(MRTG)</Link></li>
                                 <li><Link href={'http://speedtest.infrastruktur-digital.id/'} >Speed Test</Link></li>
                             </ul>
