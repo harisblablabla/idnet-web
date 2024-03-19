@@ -21,7 +21,7 @@ const page = () => {
 
             </div>
 
-            <section className='bg-gradient-to-br from-secondary-200 via-primary-200 to-primary-600'>
+            <section className='bg-gradient-to-br from-primary-200 via-primary to-primary-800'>
                 <div className="flex flex-wrap container mx-auto justify-center gap-2 w-4/5">
                     <div className="bg-white rounded-2xl mx-auto text-center py-5 px-8 w-4/5 sm:w-64 md:w-72 my-5 sm:my-10 shadow">
                         <h6 className='text-neutral-700 text-base font-regular mb-2.5'>Dedicated</h6>

@@ -9,6 +9,6 @@ export const carClient = [
     { source: '/assets/client8.webp', alt:'mcc', width: 200, height: 200 }
 ]
 
-export const carAbout = [
+export const carouselAbout = [
 
 ]

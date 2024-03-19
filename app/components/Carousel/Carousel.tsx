@@ -15,7 +15,7 @@ interface AttributeArray {
 const Carousel = ({ items }: AttributeArray) => {
     return (
         <div className="carousel carousel-end rounded-box">
-            {items.map((value: any, index: any) => (
+            {items.map((value: any, index: number) => (
                 <div className="carousel-item" key={index}>
                     <Image src={value.source} alt={value.alt} width={value.width} height={value.height} className='object-cover' />
                 </div>
