@@ -89,7 +89,9 @@ const page = () => {
       </section>
 
       <section id='whyChooseUs'>
-
+      <div className="container mx-auto w-4/5">
+        
+      </div>
       </section>
 
       <Footer />
