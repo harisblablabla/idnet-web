@@ -12,7 +12,7 @@ const Logo = ({width, height}: Size) => {
 
     return (
         <Link href={'/'}>
-            <Image src="/assets/ideanet_logo.png" alt={'logo ideanet'} width={width} height={height} />
+            <Image src="/assets/ideanet_logo.webp" alt={'logo ideanet'} width={width} height={height} />
         </Link>
     )
 }
