@@ -17,7 +17,7 @@ export default function Home() {
       <div id='mobile' className="relative flex justify-center md:hidden">
         <Image src="/assets/home_cover.jpg" alt={'home cover'} width={1000} height={750} className='w-full ms-auto h-screen object-cover' />
         <div className="absolute mx-auto top-1/4 bg-white p-10 w-4/5 rounded-2xl">
-          <h4 className='font-semibold text-3xl mb-5 text-gray-900'>Amplifying your ideas, one connection at a time.</h4>
+          <h4 className='font-semibold text-3xl mb-5 text-gray-900'>Connecting your ideas, one connection at a time.</h4>
           <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia&apos;s digital transformation through neutral ICT infrastructure and innovative solutions.</p>
           <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary w-full">Subscribe Now</Link>
         </div>
@@ -39,7 +39,7 @@ export default function Home() {
             </div>
           </div>
           <div className="absolute md:top-1/4 lg:top-[30%] md:w-1/2 xl:w-4/12 bg-white p-10 rounded-2xl">
-            <h4 className='font-semibold text-4xl mb-5 text-gray-900'>Amplifying your ideas, one connection at a time.</h4>
+            <h4 className='font-semibold text-4xl mb-5 text-gray-900'>Connecting your ideas, one connection at a time.</h4>
             <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia&apos;s digital transformation through neutral ICT infrastructure and innovative solutions.</p>
             <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary btn-wide ">Subscribe Now</Link>
           </div>

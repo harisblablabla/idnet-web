@@ -27,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <FeedbackScript />
+      <head><link rel="icon" href="/favicon.ico" /></head>
       <body className={`${inter.className}`}>{children}</body>
     </html>
   )

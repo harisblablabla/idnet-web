@@ -16,7 +16,7 @@ const page = () => {
                     <p className='mb-5 text-neutral-700 text-center mx-auto w-4/5 sm:w-3/5'>Ideanet offer high-speed Enterprise Internet services designed to meet the unique needs of businesses like yours. Our service ensures your business stays connected, with the speed and reliability you need to operate efficiently and effectively.
 
                     </p>
-                    <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary btn-wide text-center mx-auto mb-5">Subscribe Now</Link>
+                    <Link href={'https://daftar.ideanet.net.id/helpdesk/ticket-form'} className="btn btn-primary btn-wide text-center mx-auto mb-5">Call our Sales</Link>
                 </div>
 
             </div>

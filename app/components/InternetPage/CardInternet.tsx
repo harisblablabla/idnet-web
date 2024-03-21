@@ -59,7 +59,7 @@ const CardInternet = ({ tab1, tab2, tab3, paket, value, segmentasi }: Tab) => {
 
           <div className="divider w-full mb-5"></div>
 
-          <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary w-full ">Call our Sales</Link>
+          <Link href={'https://daftar.ideanet.net.id/helpdesk/ticket-form'} className="btn btn-primary w-full ">Call our Sales</Link>
         </div>
       )}
 
@@ -95,7 +95,7 @@ const CardInternet = ({ tab1, tab2, tab3, paket, value, segmentasi }: Tab) => {
 
           <div className="divider w-full mb-5"></div>
 
-          <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary w-full ">Call our Sales</Link>
+          <Link href={'https://daftar.ideanet.net.id/helpdesk/ticket-form'} className="btn btn-primary w-full ">Call our Sales</Link>
         </div>
       )}
 
@@ -131,7 +131,7 @@ const CardInternet = ({ tab1, tab2, tab3, paket, value, segmentasi }: Tab) => {
 
           <div className="divider w-full mb-5"></div>
 
-          <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary w-full ">Call our Sales</Link>
+          <Link href={'https://daftar.ideanet.net.id/helpdesk/ticket-form'} className="btn btn-primary w-full ">Call our Sales</Link>
         </div>
       )}
 
