@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
 
             {/* web */}
             <div className="navbar-start hidden lg:flex pl-10">
-                <Logo width={150} height={100} />
+                <Logo width={125} height={100} />
                 <ul className="menu menu-horizontal px-1 text-slate-600 font-medium z-50 ">
                     <li className='relative'>
                         <button onMouseOver={() => toggleMenu('product')} onClick={() => toggleMenu('product')}>Product {productMenuOpen ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp} />} </button>
