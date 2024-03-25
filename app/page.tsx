@@ -38,7 +38,7 @@ export default function Home() {
               <a href="#slide1" className=" btn btn-circle bg-white border-none text-3xl text-primary">❯</a>
             </div>
           </div>
-          <div className="absolute md:top-1/4 lg:top-[30%] md:w-1/2 xl:w-4/12 bg-white p-10 rounded-2xl">
+          <div className="absolute md:top-1/2 transform -translate-y-1/2 left-0 right-0 md:w-[28rem] lg:w-[32rem] bg-white p-10 rounded-2xl">
             <h4 className='font-semibold text-4xl mb-5 text-gray-900'>Connecting your ideas, one connection at a time.</h4>
             <p className='mb-5 text-neutral-700'>From home to digital HQ, <span className='text-secondary font-bold'>IDEANET</span> Empowering Indonesia&apos;s digital transformation through neutral ICT infrastructure and innovative solutions.</p>
             <Link href={'https://daftar.ideanet.net.id/'} className="btn btn-primary btn-wide ">Subscribe Now</Link>
