@@ -1,11 +1,11 @@
-import Navbar from '@/app/components/Navbar/Navbar'
-import TabInternet from '@/app/components/InternetPage/TabInternet'
+import Navbar from '@/app/[locale]/components/Navbar/Navbar'
+import TabInternet from '@/app/[locale]/components/InternetPage/TabInternet'
 import { faCalendarPlus, faChartColumn, faEthernet, faHeadset, faInfinity, faMoneyBillWave, faPercent, faRocket, faUser, faWifi } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'
 import React from 'react'
 import { testimony } from './data'
-import Footer from '@/app/components/Footer/Footer'
+import Footer from '@/app/[locale]/components/Footer/Footer'
 import Link from 'next/link'
 
 export default function page() {

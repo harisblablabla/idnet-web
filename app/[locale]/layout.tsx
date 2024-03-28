@@ -4,7 +4,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import './globals.css'
-import FeedbackScript from './utils/ScriptFeedback';
+import FeedbackScript from '../utils/ScriptFeedback';
 
 declare global {
   interface Window {
@@ -20,12 +20,13 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({
-  children,
+  children, params: {locale}
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
+  params: {locale: string};
 }) {
   return (
-    <html lang="en">
+    <html lang={locale}>
       <FeedbackScript />
       <head><link rel="icon" href="/favicon.ico" /></head>
       <body className={`${inter.className}`}>{children}</body>

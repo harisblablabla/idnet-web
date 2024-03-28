@@ -1,5 +1,5 @@
-import Footer from '@/app/components/Footer/Footer'
-import Navbar from '@/app/components/Navbar/Navbar'
+import Footer from '@/app/[locale]/components/Footer/Footer'
+import Navbar from '@/app/[locale]/components/Navbar/Navbar'
 import { faArrowsToCircle, faChartColumn, faGaugeHigh, faMoneyBillWave, faShieldHalved, faSignal5, faTowerBroadcast } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from 'next/image'

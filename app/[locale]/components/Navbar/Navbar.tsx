@@ -5,15 +5,19 @@ import Logo from './Logo'
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import LanguageSwitcher from './LanguageSwitcher';
+import { useParams } from 'next/navigation'
 
 const Navbar: React.FC = () => {
+
+    const params = useParams<{ tag: string; item: string; locale: string }>()
+    const language = params.locale.toUpperCase()
 
     const [productMenuOpen, setProductMenuOpen] = useState(false);
     const [openAbout, setOpenAbout] = useState(false)
     const [openSolution, setOpenSolution] = useState(false)
     const [openLang, setOpenLang] = useState(false)
-    const [lang, setLang] = useState('EN')
-
+ 
     const toggleMenu = (id: string) => {
 
         const isProduct = id === 'product';
@@ -26,6 +30,8 @@ const Navbar: React.FC = () => {
         setOpenSolution(current => isSolution ? !current : false);
         setOpenLang(current => isLang ? !current : false);
     }
+
+    
 
     return (
         <div className="navbar bg-white ">
@@ -85,10 +91,10 @@ const Navbar: React.FC = () => {
                         <div className="divider w-full mb-2.5"></div>
                         <li className='pb-2.5'>
                             <details>
-                                <summary>{lang}</summary>
+                                <summary>{language}</summary>
                                 <ul>
-                                <li><button onClick={ () => setLang('ID')}>ID (Bahasa Indonesia)</button></li>
-                                <li><button onClick={ () => setLang('EN')}>EN (English - US)</button></li></ul>
+                                <LanguageSwitcher />
+                                </ul>
                             </details>
                         </li>
                     </ul>
@@ -149,11 +155,10 @@ const Navbar: React.FC = () => {
             <div className="navbar-end hidden lg:flex pr-16">
                 <ul className="menu menu-horizontal text-slate-600 font-medium px-3 z-50">
                     <li className='relative'>
-                        <button onMouseOver={() => toggleMenu('lang')} onClick={() => toggleMenu('lang')}>{lang} {openLang ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp} />}</button>
+                        <button onMouseOver={() => toggleMenu('lang')} onClick={() => toggleMenu('lang')}>{language} {openLang ? <FontAwesomeIcon icon={faChevronDown} /> : <FontAwesomeIcon icon={faChevronUp} />}</button>
                         {openLang && (
                             <ul className="absolute top-12 -left-2 menu w-56 bg-base-200 rounded-box shadow-[0_0_10px_3px_rgba(229,229,229)]">
-                                <li><button onClick={() => setLang('ID')}>ID (Bahasa Indonesia)</button></li>
-                                <li><button onClick={() => setLang('EN')}>EN (English - US)</button></li>
+                                <LanguageSwitcher />
                             </ul>
                         )}
                     </li>
